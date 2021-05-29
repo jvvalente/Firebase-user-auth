@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonButton, IonRouterOutlet } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonButton, IonRouterOutlet, IonRouterLink } from '@ionic/react';
 import React, { useState } from 'react';
 import './Login.css';
 import { loginUser } from '../firebaseConfig'
@@ -30,8 +30,8 @@ const Login: React.FC = () => {
           <IonInput value={email} type="email" onIonChange={e => setEmail(e.detail.value!)} placeholder="email"></IonInput>
           <IonInput value={password} type="password" onIonChange={e => setPass(e.detail.value!)} placeholder="password"></IonInput>
           <IonItem>
-            <IonButton onClick={e => login()}>Login</IonButton>
-            <IonButton onClick={() => register()}>Register</IonButton>
+            <IonButton onClick={e => login()}>Login1</IonButton>
+            <IonButton onClick={() => register()}>Register1</IonButton>
           </IonItem>
       </IonContent>
     </IonPage>
